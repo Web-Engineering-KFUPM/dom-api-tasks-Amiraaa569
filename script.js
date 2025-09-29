@@ -24,11 +24,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // code that accesses the DOM
 });
 
-const el = document.getElementById("t1-msg");
+const el = document.getElementById("t1-msg").innerHTML = "Hello, World!";
 const box = document.querySelector(".className");
 
 el.textContent = "Hello, World!";
-el.innerHTML   = "<strong>HTML content</strong>";
 
 /*  
 =======================================
@@ -49,7 +48,10 @@ button.addEventListener("click", function () {
     // change text here
 });
 */
- 
+const btn = document.getElementById("button-id");
+btn.addEventListener("click", function () {
+    console.log("clicked");
+});
 
 /*  
 =======================================
